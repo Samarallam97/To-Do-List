@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:wght@200&display=swap');
+
+:root{
+  --mainColor:#DDDDDD;
+  --secColor:white;
+  --borderColor:black;
+  --fontColor:black;
+  --hoverColor:white;
+}
+
+.fontColor{
+  color: var(--fontColor);
+}
+
+.backSecColor{
+background-color: var(--secColor);
+}
+
+.borderColor{
+  border-color: var(--borderColor);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+        
+     overflow-y:auto; 
+        
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin: 0;
+}
+
+
+
+input:focus,select:focus,textarea:focus{
+    
+    box-shadow: none !important;   
+}
+
+header{
+    background-color: var(--mainColor);
+    box-shadow: 0 15px 20px rgba(122, 122, 122, 0.343);
+}
+
+.set{
+   
+   margin-bottom: 0;
+   border-bottom: 1px solid var(--borderColor) ;
+   border-top: 1px solid var(--borderColor) ;
+   margin-top: 140px;
+}
+
+.set ul >div {
+background-color:var(--mainColor) ;
+padding: 3px;
+border-radius: 7px;
+}
+
+.set  li{  
+    border-radius: 7px;
+    padding: 5px;
+    padding-inline: 9px;
+    transition:background-color .4s;
+    }
+
+.set  .active ,.set  li:hover{
+        background-color:var(--hoverColor) ;
+    
+    }
+ .set  .active{
+transform: scale(1.1);
+    }
+.card-header span{
+    background-color: var(--mainColor);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card-header{
+    background-color: var(--secColor);
+}
+
+
+.card-body{
+    background-color: var(--mainColor);
+}
+
+footer >div{
+    background-color: var(--mainColor);
+}
+
+footer h6{
+    transition: .3s;
+    }
+
+footer h6:hover{
+color: rgb(218, 1, 1);
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 12px; 
+    /* height: 12px;  */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background:rgb(0, 0, 0);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+   
+    background:#DDDDDD;
+    box-shadow: 0px 0px 4px 2px #282f38 inset;
+    
+  }
+  
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+  }
+
+  .form{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ z-index: 1000000000000000;
+
+  }
+  
+.tasks{
+    margin-bottom: 100px;
+}
+
+ .tasks .btn{
+    font-size: 14px;
+    width: 100px;
+  }
+
+
+  .btn.education{
+    background-color: rgb(44, 113, 242);
+    color: white;
+  }
+
+  .btn.health{
+    background-color:orange;
+    color: white;
+  }
+
+  .btn.finance{
+    background-color: green;
+    color: white;
+  }
+
+  .btn.productivity{
+    background-color: red;
+    color: white;
+  }
+
+
+.grid{
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.form-control.is-valid {
+  background-image: url("../images/valid.png");
+  background-size: calc(1em + 0.375rem) calc(1em + 0.375rem);
+  background-position: 99% 50% !important;
+}
+
+.form-control.is-invalid {
+  background-image: url("../images/invalid.png");
+  background-size: calc(1.5em + 0.375rem) calc(1.5em + 0.375rem);
+  background-position: 99% 50% !important;
+}
